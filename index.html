@@ -1,5 +1,6 @@
 <!doctype html>
     <head>
+        <meta charset="utf-8"></meta>
         <title>Coming (soon)?</title>
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:700&display=swap&subset=japanese" rel="stylesheet">
     </head>
@@ -25,15 +26,6 @@
             max-width: 38%;
             position: relative;
         }
-        @keyframes rotate-anime {
-            0%  {transform: rotate(0);}
-            100%  {transform: rotate(360deg);}
-            }
-        @media only screen and (max-width: 1080px) {
-            .rotate-anime { max-width: 50%; }
-            .text-area { font-size: 5vw; }
-            }
-
         .text-area{
             color: #1f2021;
             text-align: center;
@@ -43,5 +35,14 @@
         .overline {
             text-decoration: line-through;
             }
+        @keyframes rotate-anime {
+            0%  {transform: rotate(0);}
+            100%  {transform: rotate(360deg);}
+            }
+        @media only screen and (max-width: 1080px) {
+            .rotate-anime { max-width: 50%; }
+            .text-area { font-size: 5vw; }
+            }
+
     </style>
 </html>
