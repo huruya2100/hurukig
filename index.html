@@ -2,4 +2,28 @@
     <head>
         <title>kig.huruya.net</title>
     </head>
+    <body>
+        <p class=img-area>
+            <img src=./shiro-usagi2.png class="rotate-anime">
+        </p>
+
+        
+    </body>
+    <style>
+        body {
+            text-align: center;
+        }
+        .rotate-anime {
+            animation: rotate-anime 35s linear infinite;
+            max-width: 38%;
+            margin: 30px;
+        }
+            @keyframes rotate-anime {
+                0%  {transform: rotate(0);}
+                100%  {transform: rotate(360deg);}
+                }
+            @media only screen and (max-width: 1080px) {
+                .rotate-anime { max-width: 50%; }
+                }
+    </style>
 </html>
