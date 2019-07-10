@@ -1,29 +1,47 @@
 <!doctype html>
     <head>
-        <title>kig.huruya.net</title>
+        <title>Coming (soon)?</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:700&display=swap&subset=japanese" rel="stylesheet">
     </head>
     <body>
         <p class=img-area>
             <img src=./shiro-usagi2.png class="rotate-anime">
         </p>
+        <p class=text-area>
+            <span class=overline>間もなく</span>お迎えする。待機せよ。
+        </p>
 
-        
+        <p style="text-align: center; margin: 100px;"><a style="color: gray;" href="https://www.youtube.com/watch?v=I7WiyqLCQdo">元ネタ</a></p>
     </body>
     <style>
-        body {
+        body{
+            background-color: rgb(255, 251, 251);
+        }
+        p.img-area {
             text-align: center;
         }
         .rotate-anime {
             animation: rotate-anime 35s linear infinite;
             max-width: 38%;
-            margin: 30px;
+            position: relative;
         }
-            @keyframes rotate-anime {
-                0%  {transform: rotate(0);}
-                100%  {transform: rotate(360deg);}
-                }
-            @media only screen and (max-width: 1080px) {
-                .rotate-anime { max-width: 50%; }
-                }
+        @keyframes rotate-anime {
+            0%  {transform: rotate(0);}
+            100%  {transform: rotate(360deg);}
+            }
+        @media only screen and (max-width: 1080px) {
+            .rotate-anime { max-width: 50%; }
+            .text-area { font-size: 5vw; }
+            }
+
+        .text-area{
+            color: #1f2021;
+            text-align: center;
+            font-size: 3vw;
+            font-family: 'Noto Serif JP', serif;
+            }
+        .overline {
+            text-decoration: line-through;
+            }
     </style>
 </html>
